@@ -21,3 +21,21 @@ const mapStateToProps = function(state) {
 
 export default connect(mapStateToProps)(HomeWithRedux);
 
+// OR with useSelector (using React Hooks)
+
+// import React from 'react';
+// import { useSelector } from 'react-redux';
+
+// function HomeWithRedux() {
+//     const data = useSelector(state => state.data);
+    
+//     return (
+//         <div>
+//             <h2>Home with Redux</h2>
+//             <p>ID: {data.id}</p>
+//             <p>User: {data.user}</p>
+//         </div>
+//     )
+// }
+
+// export default HomeWithRedux;

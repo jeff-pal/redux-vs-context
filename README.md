@@ -11,7 +11,7 @@ npm start
 
 # Notes
 
-Create a file .env in the root path with the following content, before running `npm start`:
+1. Create a file .env in the root path with the following content, before running `npm start`:
 
 ```
 REACT_APP_STORE=<store_name>
@@ -22,3 +22,5 @@ REACT_APP_STORE=<store_name>
 Values: 
 - redux 
 - context
+
+2. Do not use `window.location.replace('')` for redirecting pages, use `history.push('/page')` instead. Redirection with `window.location.replace('url')` refreshes the application, consequently its store (redux and contex) gets the default value.
